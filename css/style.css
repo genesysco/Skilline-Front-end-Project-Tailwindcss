@@ -1,0 +1,39 @@
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-left: 20px solid #22d3ee;
+	border-bottom: 10px solid transparent;
+}
+.upper {
+	animation-name: upper;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+}
+
+.upper2 {
+	animation-name: upper;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes upper {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-15px);
+	}
+}
+
+@media screen and (min-width:640px) and (max-width:1023px) {
+	.triangle-right {
+		width: 0;
+		height: 0;
+		border-top: 7px solid transparent;
+		border-left: 12px solid #22d3ee;
+		border-bottom: 7px solid transparent;
+	}
+}

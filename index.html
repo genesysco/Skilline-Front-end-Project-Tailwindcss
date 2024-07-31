@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Skilline</title>
+	<script src="js/tailwindcss.js"></script>
+	<script src="js/tailwind.config.js"></script>
+	<script src="js/extend.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="bg-cream px-3 pt-3 md:px-4 xl:pt-12 xl:px-0">
+		<div class="max-w-screen-xl mx-auto">
+			<div class="md:flex lg:columns-2 justify-between">
+				<div class="flex justify-between items-center">
+					<div class="square h-8 w-8 bg-cyan-300 absolute rotate-45 rounded-md my-2"></div>
+					<h1 class="text-slate-900 text-xl font-bold relative m-2">
+						<a href="#">
+							Skilline
+						</a>
+					</h1>
+					<div class="rounded-md px-2 md:hidden">
+						<button class="text-blue-900 flex items-center" id="navTrigger">
+							<p class="me-3 -mt-1.5 text-[18px]">
+								Menu
+							</p>
+							<p>
+								<i class="fa-solid fa-bars fa-2x"></i>
+							</p>
+						</button>
+					</div>
+				</div>
+				
+
+
+				<nav class="bg-slate-50 px-4 py-3 rounded-xl mt-3 border hidden md:hidden" id="mobileNav">
+					<ul class="space-y-5">
+						<li>
+							<a href="#" class="text-slate-600 hover:text-slate-900 text-sm">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-slate-600 hover:text-slate-900 text-sm">
+								Careers
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-slate-600 hover:text-slate-900 text-sm">
+								Blog
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-slate-600 hover:text-slate-900 text-sm">
+								About Us
+							</a>
+						</li>
+					</ul>
+					<a href="#" class="inline-block bg-white border border-green-400 py-2.5 px-9 rounded-full text-sm mt-5">Login</a>
+					<a href="#" class="bg-yellow-500 py-2.5 px-9 rounded-full text-sm text-white">Sign Up</a>
+				</nav>
+
+
+
+
+				<nav class="hidden md:flex items-center">
+					<ul class="flex md:gap-x-7 lg:gap-x-14">
+						<li>
+							<a href="#" class="text-slate-600 hover:text-slate-900 text-sm">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-slate-600 hover:text-slate-900 text-sm">
+								Careers
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-slate-600 hover:text-slate-900 text-sm">
+								Blog
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-slate-600 hover:text-slate-900 text-sm">
+								About Us
+							</a>
+						</li>
+					</ul>
+					<a href="#" class="bg-white py-2.5 px-9 rounded-full text-sm md:mx-4 lg:mx-6">Login</a>
+					<a href="#" class="bg-yellow-500 py-2.5 px-9 rounded-full text-sm text-white">Sign Up</a>
+				</nav>
+			</div>
+			<!---------------------------- End of Nav ---------------------------->
+
+			<header class="sm:flex md:items-center mt-5">
+				<section>
+					<h2 class="text-blue-900 font-bold text-3xl my-7 text-center sm:text-start sm:mt-3 md:text-4xl md:my-0 lg:text-5xl lg:leading-tight">
+						<span class="text-yellow-500">
+							Studying
+						</span>
+						Online is now much easier
+					</h2>
+					<p class="text-xl my-5 text-center sm:text-start sm:text-xl sm:my-5 lg:my-8 lg:text-2xl">
+						Skilline is an interesting platform that will teach you
+						 in more an interactive way
+					</p>
+					<div class="flex flex-col sm:flex-row items-center">
+						<a href="#" class="bg-yellow-500 inline-block text-white font-bold rounded-full px-8 py-3 text-xl sm:text-sm md:text-md lg:text-xl sm:me-3 sm:px-4 sm:py-1.5 lg:px-8 lg:py-3 lg:me-6 hover:scale-110 duration-300 ease-in-out">
+						Join for free
+						</a>
+						
+						<a href="#" class="hover:scale-110 duration-300 ease-in-out my-5 sm:my-0 inline-block">
+							<div class="flex items-center">
+								<div class="bg-white inline-block py-4 ps-5 pe-3 rounded-full me-3 sm:py-2.5 sm:ps-3 sm:pe-2 lg:py-4 lg:ps-5 lg:pe-3">
+									<div class="triangle-right"></div>
+								</div>
+								<div class="sm:text-sm lg:text-xl">
+									Watch how it works
+								</div>
+							</div>
+						</a>
+					</div>
+				</section>
+
+				<section class="relative flex justify-center">
+					<img src="image/girl.png" alt="Girl" class="w-5/6 sm:w-full xl:w-5/6">
+					<img src="image/calendar.svg" alt="Calendar" class="absolute w-28 top-5 sm:w-32 md:w-40 md:top-8 lg:w-44 lg:top-36 left-1 upper2 bg-white rounded-xl">
+					<img src="image/congrat.svg" alt="Congrat" class="absolute w-28 top-40 right-0 sm:top-48 sm:w-32 md:w-36 md:right-3 md:top-52 lg:w-48 lg:right-6 lg:top-80 upper2 bg-white rounded-xl">
+
+					<div class="absolute top-10 right-3 md:top-10 md:right-5 lg:top-20 lg:right-10 upper">
+					    <svg class="h-16 sm:h-24" viewBox="0 0 149 149" fill="none" >
+					    	<g filter="url(#filter0_d)">
+					    		<rect x="40" y="32" width="69" height="69" rx="14" fill="#F3627C"/>
+					    	</g>
+					    	<rect x="51.35" y="44.075" width="47.3" height="44.85" rx="8" fill="white"/>
+					    	<path d="M74.5 54.425V78.575" stroke="#F25471" stroke-width="4" stroke-linecap="round"/>
+					    	<path d="M65.875 58.7375L65.875 78.575" stroke="#F25471" stroke-width="4" stroke-linecap="round"/>
+					    	<path d="M83.125 63.9125V78.575" stroke="#F25471" stroke-width="4" stroke-linecap="round"/>
+					    	<defs>
+					    		<filter id="filter0_d" x="0" y="0" width="149" height="149" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					    			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					    			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+					    			<feOffset dy="8"/>
+					    			<feGaussianBlur stdDeviation="20"/>
+					    			<feColorMatrix type="matrix" values="0 0 0 0 0.825 0 0 0 0 0.300438 0 0 0 0 0.396718 0 0 0 0.26 0"/>
+					    			<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+					    			<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+					    		</filter>
+					    	</defs>
+					    </svg>
+					 </div>
+
+					<img src="image/ux-class.svg" alt="UX" class="absolute w-24 left-3 bottom-20 sm:w-32 md:w-40 md:left-3 md:bottom-12 lg:bottom-20 lg:w-52 lg:left-6  upper bg-white rounded-xl">
+				</section>
+			</header>
+		</div>
+	</div>
+	<div class="text-white -mt-14 sm:-mt-24 md:-mt-16 lg:-mt-20 xl:-mt-36 relative">
+			<svg class="xl:h-40 xl:w-full" viewBox="0 0 1200 120">
+			  <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" fill="currentColor"></path>
+			</svg>
+			<div class="bg-white w-full h-20 -mt-px"></div>
+		</div>
+	<!-- ------------------------------------ End of Header ------------------------- -->
+
+
+
+
+
+
+
+
+	<!-- ---------------------------------- Trusted By & All-in-One---------------------- -->
+	<section class="sm:mt-12">
+		<div class="max-w-screen-lg mx-auto text-center">
+			<h3 class="text-gray-400 my-6">
+				Trusted by 5,000+ Companies Worldwide
+			</h3>
+			<div class="grid grid-cols-2 gap-x-3 gap-y-10 sm:grid-cols-3 md:grid-cols-6 md:gap-4 justify-items-center mb-16">
+				<img src="image/company/google.svg" class="h-7" alt="Google">
+				<img src="image/company/netflix.svg" class="h-7" alt="Netflix">
+				<img src="image/company/airbnb.svg" class="h-7" alt="Airbnb">
+				<img src="image/company/amazon.svg" class="h-7" alt="Amazon">
+				<img src="image/company/facebook.svg" class="h-7" alt="Facebook">
+				<img src="image/company/grab.svg" class="h-7" alt="Grab">
+			</div>
+
+			<!-- ---------- All-in-One --------- -->
+			<h4 class="text-blue-900 text-2xl font-bold mt-20 mb-4">
+				All-In-One
+				<span class="text-yellow-500">
+					Cloud Software
+				</span>
+			</h4>
+			<p class="text-gray-600 text-lg mb-20">
+				Skilline is one powerful online software suite that combines all the tools needed
+				<br>
+				to run a successful school or office
+			</p>
+			<!-- ---------- All-in-One --------- -->
+		</div>
+	</section>
+	<!-- ---------------------------------- Trusted By & All-in-one End ---------------------- -->
+
+
+
+
+
+
+
+
+
+	<!-- ---------------------------- Triple Cards ---------------------------------- -->
+	<section>
+		<div class="max-w-screen-xl mx-auto">
+			<!-- --------- Triple Cards -------- -->
+			<div class="grid grid-cols-1 gap-y-20 px-5 sm:grid-cols-2 md:px-2 md:grid-cols-3 sm:gap-10 my-10 text-center md:gap-x-3 xl:gap-10 xl:px-0">
+
+				<div class="shadow-xl rounded-xl pt-10 pb-9 px-7 md:px-3 lg:px-7">
+					<div class="inline-block bg-[#5B72EE] py-4 px-5 rounded-full">
+						<i class="fa-solid fa-sheet-plastic fa-2x text-white"></i>
+					</div>
+					<h4 class="text-blue-900 text-xl px-8 my-8">
+						Online Billing, Invoicing, & Contracts
+					</h4>
+					<p class="text-gray-600">
+						Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts...
+					</p>
+				</div>
+				<!-- End of Card One -->
+
+				<div class="shadow-xl rounded-xl pt-10 pb-9 px-7 md:px-3 lg:px-7">
+					<div class="inline-block bg-cyan-400 py-4 px-5 rounded-full mb-5">
+						<i class="fa-solid fa-person-military-rifle fa-2x text-white"></i>
+					</div>
+					<h4 class="text-blue-900 text-xl px-8 my-8">
+						Customer Tracking
+					</h4>
+					<p class="text-gray-600">
+						Automate and track emails to individuals or groups. Skilline’s built-in system helps organize your organization...
+					</p>
+				</div>
+				<!-- End of Card Two -->
+
+				<div class="shadow-xl rounded-xl pt-10 pb-9 px-7 md:px-3 lg:px-7">
+					<div class="inline-block bg-[#5B72EE] py-4 px-5 rounded-full">
+						<i class="fa-solid fa-sheet-plastic fa-2x text-white"></i>
+					</div>
+					<h4 class="text-blue-900 text-xl px-8 my-8">
+						Online Billing, Invoicing, & Contracts
+					</h4>
+					<p class="text-gray-600">
+						Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts...
+					</p>
+				</div>
+				<!-- End of Card Three -->
+			</div>
+			<!-- --------- Triple Cards -------- -->
+		</div>
+	</section>
+	<!-- ---------------------------- End of Triple Cards --------------------------- -->
+
+
+
+
+
+
+	<!-- ------------------------ what-skilline ----------------------------- -->
+	<section class="my-40">
+		<h4 class="text-slate-700 text-center font-bold text-3xl">
+			What is
+			<span class="text-yellow-500">
+				Skilline ?
+			</span>
+		</h4>
+		<p class="text-gray-500 text-center my-6 px-3 lg:px-0">
+			Skilline is a platform that allows educators to create online classes whereby they can store the course
+			<br class="hidden lg:block">
+			 materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide
+			<br class="hidden lg:block">
+			  students with feedback all in one place.
+		</p>
+		<div class="max-w-screen-lg mx-auto">
+			<div class="content-center gap-y-3 md:grid md:grid-cols-1 lg:gap-5 lg:grid-cols-2">
+				<div class="bg-[url('image/Rectangle19.png')] mx-auto w-80 h-60 sm:mb-3 sm:w-[500px] sm:h-[333px] bg-contain bg-no-repeat rounded-2xl text-center"> 
+					<div class="grid content-center backdrop-brightness-75 h-[89%] sm:h-full rounded-2xl">
+						<div>
+							<h5 class="text-white text-sm font-bold mb-2"> 
+								FOR INSTRUCTORS
+							</h5>
+							<a href="#" class="text-white hover:scale-110 duration-500 ease-in-out inline-block border-[1px] rounded-full py-3 px-5 text-xs">
+								Start a class Today !
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bg-[url('image/Rectangle21.png')] mx-auto w-80 h-60 sm:w-[500px] sm:h-[333px] bg-contain bg-no-repeat rounded-2xl text-center"> 
+					<div class="grid content-center backdrop-brightness-75 content-center h-[89%] sm:h-full rounded-2xl">
+						<div>
+							<h5 class="text-white text-sm font-bold mb-2"> 
+								FOR STUDENTS
+							</h5>
+							<a href="#" class="text-white hover:scale-110 duration-500 ease-in-out inline-block bg-blue-400 rounded-full py-3 px-5 text-xs">
+								Enter access code
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ------------------------ End 0f what-skilline ----------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- -------------------------------- Double Parts ------------------------------- -->
+	<section>
+		<div class="max-w-screen-xl mx-auto">
+			<!-- Part One -->
+			<div class="grid grid-cols-1 px-5 md:grid-cols-2 lg:px-0 items-center mb-20">
+				<div class="relative text-center mb-10 sm:text-start md:mb-0">
+					<div class="bg-yellow-500 w-12 h-12 rounded-full absolute animate-pulse -top-3 sm:-left-4"></div>
+					<h5 class="text-blue-900 text-2xl font-bold relative z-10">
+						Everything you can do in a physical classroom,<br class="hidden sm:block md:hidden lg:block">
+						<span class="text-yellow-500">
+							you can do with Skilline
+						</span>
+					</h5>
+					<p class="text-gray-700 my-6 md:my-4 md:pe-4 md:text-justify lg:pe-0 lg:my-6">
+						Skilline’s school management software helps traditional <br class="md:hidden lg:block">
+						and online schools manage scheduling, attendance, payments and<br class="md:hidden lg:block">
+						 virtual classrooms all in one secure cloud-based system.
+					</p>
+					<a href="#" class="text-gray-700 underline">
+						Learn More
+					</a>
+				</div>
+				<div class="relative">
+					<div class="bg-cyan-500 w-12 h-12 top-0 sm:w-24 sm:h-24 rounded-xl absolute upper2 sm:-top-1 -left-2"></div>
+					<img src="image/teacher-explaining.png" alt="Class" class="relative z-10">
+					<div class="bg-yellow-500 w-24 h-24 -right-2 -bottom-2.5 sm:w-40 sm:h-40 rounded-xl absolute upper sm:-right-3 sm:-bottom-5"></div>
+				</div>
+			</div>
+			<!-- EndPart One -->
+
+			<!-- Part Two -->
+			<div class="md:ps-5 lg:ps-0 lg:flex my-32">
+				<div class="sm:px-3 lg:w-7/12 relative">
+					<div class="bg-green-400 w-32 h-32 rounded-full animate-pulse absolute -top-12 left-3"></div>
+					<div class="bg-blue-400 w-5 h-5 rounded-full animate-ping absolute -top-12 left-36"></div>
+					<img src="image/vcall.png" alt="VoiceCall" class="upper2 relative z-10">
+					<div class="bg-cyan-400 w-36 h-36 rounded-full animate-pulse absolute bottom-5 right-1"></div>
+					<div class="bg-rose-400 w-5 h-5 rounded-full animate-ping absolute bottom-5 right-36"></div>
+				</div>
+				<div class="text-center px-3 mt-10 sm:px-5 md:mt-0 sm:text-start md:text-center lg:text-start lg:px-0">
+					<h4 class="text-blue-900 text-2xl font-bold">
+						A
+						<span class="text-yellow-500"> 
+						user interface
+						</span>
+						 designed for the classroom
+					</h4>
+
+					<div class="flex my-10 space-x-3 items-center">
+						<div class="flex-shrink bg-white shadow-lg rounded-full p-3 flex items-center justify-center">
+							<svg class="w-4 h-4" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="11.8182" height="11.8182" rx="2" fill="#2F327D"></rect>
+								<rect y="14.1816" width="11.8182" height="11.8182" rx="2" fill="#2F327D"></rect>
+								<rect x="14.7727" width="11.8182" height="11.8182" rx="2" fill="#2F327D"></rect>
+								<rect x="14.7727" y="14.1816" width="11.8182" height="11.8182" rx="2" fill="#F48C06"></rect>
+							</svg>
+						</div>
+						<p class="text-gray-500">
+							Teachers don’t get lost in the grid view and have a dedicated Podium space.
+						</p>
+					</div>
+
+
+
+					<div class="flex my-5 space-x-3 items-center">
+						<div class="flex-shrink bg-white shadow-lg rounded-full p-3 flex items-center justify-center">
+							<svg class="w-4 h-4" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="8" y="6" width="20" height="20" rx="2" fill="#2F327D"></rect>
+							<rect width="21.2245" height="21.2245" rx="2" fill="#F48C06"></rect>
+						</svg>
+						</div>
+						<p class="text-gray-500">
+							TA’s and presenters can be moved to the front of the class.
+						</p>
+					</div>
+
+
+
+					<div class="flex my-10 space-x-3 items-center">
+						<div class="flex-shrink bg-white shadow-lg rounded-full p-3 flex items-center justify-center">
+							<svg class="w-4 h-4" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4.5 11.375C6.15469 11.375 7.5 9.91758 7.5 8.125C7.5 6.33242 6.15469 4.875 4.5 4.875C2.84531 4.875 1.5 6.33242 1.5 8.125C1.5 9.91758 2.84531 11.375 4.5 11.375ZM25.5 11.375C27.1547 11.375 28.5 9.91758 28.5 8.125C28.5 6.33242 27.1547 4.875 25.5 4.875C23.8453 4.875 22.5 6.33242 22.5 8.125C22.5 9.91758 23.8453 11.375 25.5 11.375ZM27 13H24C23.175 13 22.4297 13.3605 21.8859 13.9445C23.775 15.0668 25.1156 17.093 25.4062 19.5H28.5C29.3297 19.5 30 18.7738 30 17.875V16.25C30 14.4574 28.6547 13 27 13ZM15 13C17.9016 13 20.25 10.4559 20.25 7.3125C20.25 4.16914 17.9016 1.625 15 1.625C12.0984 1.625 9.75 4.16914 9.75 7.3125C9.75 10.4559 12.0984 13 15 13ZM18.6 14.625H18.2109C17.2359 15.1328 16.1531 15.4375 15 15.4375C13.8469 15.4375 12.7688 15.1328 11.7891 14.625H11.4C8.41875 14.625 6 17.2453 6 20.475V21.9375C6 23.2832 7.00781 24.375 8.25 24.375H21.75C22.9922 24.375 24 23.2832 24 21.9375V20.475C24 17.2453 21.5812 14.625 18.6 14.625ZM8.11406 13.9445C7.57031 13.3605 6.825 13 6 13H3C1.34531 13 0 14.4574 0 16.25V17.875C0 18.7738 0.670312 19.5 1.5 19.5H4.58906C4.88438 17.093 6.225 15.0668 8.11406 13.9445Z" fill="#2F327D"></path>
+						</svg>
+						</div>
+						<p class="text-gray-500">
+							Teachers can easily see all students and class data at one time.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- EndPart Two -->
+
+
+
+
+
+
+
+
+			<!-- Part Three -->
+			<div class="px-3 text-center sm:px-5 sm:text-start md:flex lg:px-0 items-center my-32">
+				<div class="md:w-1/2">
+					<h4 class="text-blue-900 text-3xl font-bold">
+						<span class="text-yellow-500"> 
+							Tools 
+						</span>
+						For Teachers <br class="sm:hidden lg:block"> And Learners
+					</h4>
+					<p class="text-gray-500 my-10 lg:pr-60">
+						Class has a dynamic set of teaching tools built to be deployed and used during class. Teachers can handout assignments in real-time for students to complete and submit.
+					</p>
+				</div>
+				<div class="md:w-1/2">
+					<img src="image/girl-with-books.png" alt="CollegeGirl">
+				</div>
+			</div>
+			<!-- EndPart Three -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- Part Four -->
+			<div class="sm:px-5 md:flex items-center my-32">
+				<div class="md:w-1/2">
+					<img src="image/true-false.png" alt="CollegeGirl" class="md:w-10/12">
+				</div>
+				<div class="text-center px-3 sm:px-0 sm:text-start md:w-1/2">
+					<h4 class="text-blue-900 text-3xl font-bold">
+						Assessments,
+						<span class="text-yellow-500"> 
+							Quizzes
+						</span>
+						, Tests
+					</h4>
+					<p class="text-gray-500 my-10 lg:pr-60">
+						Easily launch live assignments, quizzes, and tests. Student results are automatically entered in the online gradebook.
+					</p>
+				</div>
+			</div>
+			<!-- EndPart Four -->
+
+
+
+
+
+
+
+
+
+
+
+			<!-- Part Five -->
+			<div class="md:flex items-center my-32">
+				<div class="text-center px-3 sm:px-5 sm:text-start md:px-3 md:w-5/12 lg:px-0">
+					<h4 class="text-blue-900 text-3xl font-bold">
+						<span class="text-yellow-500"> 
+							Class Management 
+						</span>
+						Tools for Educators
+					</h4>
+					<p class="text-gray-500 my-10 md:my-5 lg:my-10 lg:pr-60">
+						Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.
+					</p>
+				</div>
+				<div class="md:w-7/12">
+					<img src="image/gradebook.png" alt="CollegeGirl">
+				</div>
+			</div>
+			<!-- EndPart Five -->
+
+
+
+
+
+			<!-- Part Six -->
+			<div class="md:flex items-center my-32">
+				<div class="md:w-7/12">
+					<img src="image/discussion.png" alt="CollegeGirl" class="md:w-11/12">
+				</div>
+				<div class="text-center px-3 sm:text-start sm:px-5 md:px-0 md:w-5/12">
+					<h4 class="text-blue-900 text-3xl font-bold">
+						One-on-One
+						<span class="text-yellow-500"> 
+							Discussions
+						</span>
+					</h4>
+					<p class="text-gray-500 my-10 md:pr-16 lg:pr-60">
+						Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.
+					</p>
+				</div>
+			</div>
+			<!-- EndPart Six -->
+
+			<button href="#" class="text-yellow-500 border-[1px] rounded-full py-3 px-5 mb-10 
+			border-yellow-500 justify-self-center hover:scale-110 duration-300 ease-in-out mx-auto block 
+			hover:bg-yellow-500 hover:text-white transition">
+				See more features
+			</button>
+
+
+
+
+
+			<!-- Part Seven Integrations -->
+			<div class="md:flex items-center my-32">
+				<div class="md:w-1/2">
+					<img src="image/integrations.png" alt="CollegeGirl" class="sm:w-8/12 sm:mx-auto lg:mx-0">
+				</div>
+				<div class="mt-10 px-3 sm:px-5 sm:mt-10 text-center md:text-start md:w-1/2 md:mt-0 md:px-0">
+					<div class="flex space-x-5 mb-5 items-center justify-center md:justify-start">
+						<span class="border-b-2 border-bottom border-rose-400 w-14"></span>
+						<h4 class="text-gray-500">
+							INTEGRATIONS
+						</h4>
+					</div>
+					<h4 class="text-blue-900 text-2xl font-bold">
+						200+ educational tools and platform <br class="md:hidden lg:block">
+						<span class="text-yellow-500"> 
+							integrations
+						</span>
+					</h4>
+					<p class="text-gray-500 my-10 md:pr-16 lg:pr-60">
+						Schoology has every tool your classroom needs and comes pre-integrated with more than 200+ tools, student information systems (SIS), and education platforms.
+					</p>
+					<a href="#" class="text-yellow-500 border-[1px] rounded-full py-3 px-5 mb-10 
+					border-yellow-500 justify-self-center hover:scale-110 duration-300 ease-in-out inline-block 
+					hover:bg-yellow-500 hover:text-white transition">
+						See All Integrations
+					</a>
+				</div>
+			</div>
+			<!-- EndPart Seven Integrations -->
+
+
+
+
+
+
+
+
+
+
+
+			<!-- Part Eight Testimonial -->
+			<div class="md:flex items-center my-32">
+				<div class="px-3 sm:px-5 md:ps-4 md:w-1/2 lg:px-0">
+					<div class="flex space-x-5 mb-5 items-center">
+						<span class="border-b-2 border-bottom border-gray-300 w-14"></span>
+						<h4 class="text-gray-400">
+							TESTIMONIAL
+						</h4>
+					</div>
+					<h4 class="text-blue-900 text-3xl font-bold">
+						What They Say?
+					</h4>
+					<p class="text-gray-500 my-10 lg:pr-60">
+						Skilline has got more than 100k positive ratings from our users around the world.
+						<br><br>
+						Some of the students and teachers were greatly helped by the Skilline.
+						<br><br>
+						Are you too? Please give your assessment
+					</p>
+
+					<a href="#" class="text-yellow-500 border-[1px] rounded-full ps-5 mb-10 
+					border-yellow-500 justify-self-center hover:scale-110 duration-300 ease-in-out inline-block 
+					hover:bg-yellow-500 hover:text-white transition">
+						<span class="flex items-center">
+							<span>
+								Write your assessment
+							</span>
+							<div class="ms-3 border px-4 py-3 rounded-full border-yellow-500">
+								<i class="fa-solid fa-arrow-right"></i>
+							</div>
+						</span>
+					</a>
+
+				</div>
+				<div class="md:w-1/2">
+					<img src="image/testimonials.png" alt="CollegeGirl">
+				</div>
+			</div>
+			<!-- EndPart Eight -->
+
+
+
+
+			<!-- ----------------------- Latest News --------------------------- -->
+			<div class="my-32 px-3 sm:px-0">
+				<h4 class="text-blue-900 text-2xl font-bold text-center">
+					Latest News and Resources
+				</h4>
+				<p class="text-gray-500 text-center my-3">
+					See the developments that have occurred to Skillines in the world
+				</p>
+				<div class="sm:px-5 md:flex my-12 md:space-x-3 md:space-x-16">
+					<div class="mb-10 md:mb-0 md:w-1/2">
+						<img src="image/laptop-news.png" alt="Laptop" class="sm:mx-auto">
+						<span class="text-blue-900 bg-yellow-300 my-6 px-5 font-bold rounded-full inline-block text-sm">NEWS</span>
+						<h5 class="font-bold text-xl text-slate-800">
+							Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution
+						</h5>
+						<p class="text-gray-500 my-8">
+							Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...
+						</p>
+						<a href="#" class="underline text-gray-600">
+							Read more
+						</a>
+					</div>
+					<div class="md:w-1/2">
+
+						<div class="sm:flex mb-3">
+							<div class="relative justify-center flex sm:w-7/12 md:w-full lg:w-7/12">
+								<img src="image/children-laptop.png" alt="children-laptop">
+								<span class="text-blue-900 bg-yellow-300 absolute px-5 font-bold rounded-full inline-block text-sm sm:right-3 bottom-3">
+									PRESS RELEASE
+								</span>
+							</div>
+							<div class="text-center sm:text-start sm:ms-5">
+								<h5 class="font-bold text-slate-800">
+									Class Technologies Inc. Closes $30 Million Series A Financing to Meet High Demand
+								</h5>
+								<p class="text-gray-500 my-4 text-xs">
+									Class Technologies Inc., the company that created Class,...
+								</p>
+							</div>
+						</div>
+
+
+
+						<div class="sm:flex mb-3">
+							<div class="relative justify-center flex sm:w-7/12 md:w-full lg:w-7/12">
+								<img src="image/girl-laptop.png" alt="children-laptop">
+								<span class="text-blue-900 bg-yellow-300 absolute px-5 font-bold rounded-full inline-block text-sm sm:right-3 bottom-3">
+									NEWS
+								</span>
+							</div>
+							<div class="text-center sm:text-start sm:ms-5">
+								<h5 class="font-bold text-slate-800">
+									Zoom’s earliest investors are betting millions on a better Zoom for schools
+								</h5>
+								<p class="text-gray-500 my-4 text-xs">
+									Zoom was never created to be a consumer product. Nonetheless, the...
+								</p>
+							</div>
+						</div>
+
+
+
+
+						<div class="sm:flex mb-3">
+							<div class="relative justify-center flex sm:w-7/12 md:w-full lg:w-7/12">
+								<img src="image/cat-laptop.png" alt="children-laptop">
+								<span class="text-blue-900 bg-yellow-300 absolute px-5 font-bold rounded-full inline-block text-sm sm:right-3 bottom-3">
+									NEWS
+								</span>
+							</div>
+							<div class="text-center sm:text-start sm:ms-5">
+								<h5 class="font-bold text-slate-800">
+									Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms
+								</h5>
+								<p class="text-gray-500 my-4 text-xs">
+									This year, investors have reaped big financial returns from betting on Zoom...
+								</p>
+							</div>
+						</div>
+
+						<!-- w-1/2 -->
+					</div>
+				</div>
+			</div>
+			<!-- --------------------- Latest News --------------------------- -->
+
+			<!-- ======= max-w-screen-xl ======= -->
+		</div>
+	</section>
+	<!-- -------------------------------- Double Parts ------------------------------- -->
+
+
+
+
+
+
+
+
+	<footer class="bg-blue-950 pb-8 pt-16">
+		<div class="flex justify-center items-center mb-10">
+			<div>
+				<div class="square h-8 w-8 border border-cyan-300 absolute rotate-45 rounded-md my-2"></div>
+				<h1 class="text-white text-xl font-semibold relative m-2 ">
+					<a href="#">
+						Skilline
+					</a>
+				</h1>
+			</div>
+			<div class="border-gray-100 border-l mx-3 ps-5 py-2">
+				<p class="text-slate-300 font-semibold">
+					Virtual Class for
+					<br>
+					Zoom
+				</p>
+			</div>
+		</div><!-- flex-One -->
+
+		<div class="my-20">
+			<h6 class="text-slate-300 text-center font-semibold text-md">
+				Subscribe to get our Newsletter
+			</h6>
+			<div class="px-3 sm:px-0 sm:flex justify-center my-5 sm:items-center sm:space-x-3">
+				<input type="email" name="email" class="border bg-transparent px-3 py-2 rounded-full border-gray-300 focus:outline-none text-gray-300 w-full mb-3 sm:mb-0 sm:w-auto" 
+				placeholder="Your Email ...">
+				<a href="#" class="text-white inline-block px-4 font-semibold py-2 rounded-full bg-gradient-to-r from-blue-500 to-blue-900">
+					Subscribe
+				</a>
+			</div>
+		</div><!-- flex-Two -->
+
+
+
+		<div class="flex justify-center items-center mb-5">
+			<a href="#" class="text-gray-400 border-r border-gray-400 px-5 hover:text-white">
+				Careers
+			</a>
+			<a href="#" class="text-gray-400 border-r border-gray-400 px-5 hover:text-white">
+				Privacy
+			</a>
+			<a href="#" class="text-gray-400 px-5 hover:text-white">
+				Terms & Conditions
+			</a>
+		</div><!-- flex-Three -->
+
+		<p class="text-gray-400 text-center">
+			© 2024 Genesysco Technologies Inc.
+		</p>
+
+	</footer>
+
+	<script src="js/all.min.js"></script>
+	<script src="js/jQuery.js"></script>
+	<script src="js/menu.js"></script>
+</body>
+</html>
